@@ -8,5 +8,6 @@ Oh, also i got rid of the stack view, and replace all elements with auto layout 
 
 <p align="center"> Application Design </p>
 <p align="center"> 
-      
+      <img width="425" alt="Снимок экрана 2021-07-27 в 18 24 27" src="https://user-images.githubusercontent.com/87068027/127184312-00d9c9c3-80e9-4f73-aeb8-8c807d01b391.png">
+      <img width="425" alt="Снимок экрана 2021-07-27 в 18 26 19" src="https://user-images.githubusercontent.com/87068027/127184319-a590fd19-76f4-4c24-845c-992dbb748658.png">
 </p>
