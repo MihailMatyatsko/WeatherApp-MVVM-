@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o4c-2N-1oK">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="NKc-k2-Y2p">
+            <objects>
+                <viewController id="o4c-2N-1oK" customClass="WeatherViewController" customModule="Grados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jBl-t7-tWI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mc Gaheysville, VA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-7V-ZDE" userLabel="City">
+                                <rect key="frame" x="86" y="30" width="203.5" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, Nov 13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiJ-Us-pfJ" userLabel="Date">
+                                <rect key="frame" x="113" y="75" width="149.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="rw-light"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c01d" translatesAutoresizingMaskIntoConstraints="NO" id="GtG-hc-UZ7" userLabel="Current Icon">
+                                <rect key="frame" x="97.5" y="115.5" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Xo8-p0-Ncl"/>
+                                    <constraint firstAttribute="height" constant="180" id="lbg-1l-XBD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny - 90℉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhq-3O-Ta5" userLabel="Current Summary">
+                                <rect key="frame" x="143" y="315.5" width="89" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" name="rw-light"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forecast summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUE-Jv-HLM">
+                                <rect key="frame" x="103" y="382.5" width="169" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presure in region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW3-ph-TxB">
+                                <rect key="frame" x="116.5" y="423" width="142.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed in region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEU-lK-ZmK">
+                                <rect key="frame" x="97.5" y="461" width="180.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyN-pW-5DM" userLabel="Change Location Button">
+                                <rect key="frame" x="20" y="35" width="20" height="22"/>
+                                <color key="tintColor" name="rw-light"/>
+                                <state key="normal" image="location.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="promptForLocation:" destination="o4c-2N-1oK" eventType="touchUpInside" id="BTg-We-oME"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AwZ-jR-pMS"/>
+                        <color key="backgroundColor" name="rw-dark"/>
+                        <constraints>
+                            <constraint firstItem="dyN-pW-5DM" firstAttribute="leading" secondItem="AwZ-jR-pMS" secondAttribute="leading" constant="20" id="19Q-8d-QM0"/>
+                            <constraint firstItem="Mhq-3O-Ta5" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="2dF-hX-hGr"/>
+                            <constraint firstItem="qiJ-Us-pfJ" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="7kI-KX-57H"/>
+                            <constraint firstItem="dEU-lK-ZmK" firstAttribute="top" secondItem="gW3-ph-TxB" secondAttribute="bottom" constant="15" id="FCH-sb-Gfl"/>
+                            <constraint firstItem="jUE-Jv-HLM" firstAttribute="top" secondItem="Mhq-3O-Ta5" secondAttribute="bottom" constant="50" id="MpD-Ii-Iz5"/>
+                            <constraint firstItem="gW3-ph-TxB" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="R9s-09-CO4"/>
+                            <constraint firstItem="qiJ-Us-pfJ" firstAttribute="top" secondItem="7Rw-7V-ZDE" secondAttribute="bottom" constant="15" id="UO3-KV-eW6"/>
+                            <constraint firstItem="7Rw-7V-ZDE" firstAttribute="top" secondItem="AwZ-jR-pMS" secondAttribute="top" constant="30" id="ZF8-IM-Psw"/>
+                            <constraint firstItem="GtG-hc-UZ7" firstAttribute="top" secondItem="qiJ-Us-pfJ" secondAttribute="bottom" constant="20" id="aqL-81-UCs"/>
+                            <constraint firstItem="dyN-pW-5DM" firstAttribute="top" secondItem="AwZ-jR-pMS" secondAttribute="top" constant="35" id="c3E-Ob-IX7"/>
+                            <constraint firstItem="7Rw-7V-ZDE" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="dM1-ra-Sbi"/>
+                            <constraint firstItem="jUE-Jv-HLM" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="hIr-vU-7sx"/>
+                            <constraint firstItem="dEU-lK-ZmK" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="nCM-II-kop"/>
+                            <constraint firstItem="Mhq-3O-Ta5" firstAttribute="top" secondItem="GtG-hc-UZ7" secondAttribute="bottom" constant="20" id="oE5-Nh-1UN"/>
+                            <constraint firstItem="GtG-hc-UZ7" firstAttribute="centerX" secondItem="jBl-t7-tWI" secondAttribute="centerX" id="oFj-Wt-Tle"/>
+                            <constraint firstItem="gW3-ph-TxB" firstAttribute="top" secondItem="jUE-Jv-HLM" secondAttribute="bottom" constant="15" id="qix-my-tBw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="7Rw-7V-ZDE" id="whj-hh-3Ce"/>
+                        <outlet property="currentIcon" destination="GtG-hc-UZ7" id="r7H-JL-UiP"/>
+                        <outlet property="currentSummaryLabel" destination="Mhq-3O-Ta5" id="1JH-pu-oeU"/>
+                        <outlet property="dateLabel" destination="qiJ-Us-pfJ" id="TkE-iR-lIR"/>
+                        <outlet property="forecastSummary" destination="jUE-Jv-HLM" id="NKl-7L-zqW"/>
+                        <outlet property="presureLabel" destination="gW3-ph-TxB" id="wKO-SM-rkr"/>
+                        <outlet property="windSpeedLabel" destination="dEU-lK-ZmK" id="YXW-Oh-2O8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKK-3P-kva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="139.880059970015"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="c01d" width="60" height="60"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="rw-dark">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rw-light">
+            <color red="0.94901960784313721" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
